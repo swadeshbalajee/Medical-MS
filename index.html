@@ -1,0 +1,208 @@
+<script type="text/javascript">
+function myfunc($var)
+{
+     alert($var);
+}
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Health - Medical Website Template</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="svjk0" >
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/tooplate-style.css">
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+     <!-- MENU -->
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Center</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#top" class="smoothScroll">Home</a></li>
+                    
+                         <li><a href="doctors.php" class="smoothScroll">Doctors</a></li>
+                         
+                         
+                         <li class="appointment-btn"><a href="#appointment">Enter patient details</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                         <div class="owl-carousel owl-theme">
+                              <div class="item item-first">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Let's make your life happier.</h3>
+                                             <h1>GET TO WORK!</h1>
+                                             <a href="doctors.php" class="section-btn btn btn-default smoothScroll">Doctors' Login</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-second">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>Hoping you find strength with each new day.</h3>
+                                             <h1>GET WELL SOON :) </h1>
+                                             <a href="#appointment" class="section-btn btn btn-default btn-gray smoothScroll">Enter patient details</a>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div class="item item-third">
+                                   <div class="caption">
+                                        <div class="col-md-offset-1 col-md-10">
+                                             <h3>With great power comes great responsibility.</h3>
+                                             <h1>BRING THE CHANGE!!</h1>
+                                             <a href="admin.php" class="section-btn btn btn-default btn-blue smoothScroll">Admins' login</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+
+
+
+
+     <!-- MAKE AN APPOINTMENT -->
+     <section id="appointment" data-stellar-background-ratio="3">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <img src="images/appointment-image.jpg" class="img-responsive" alt="">
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <!-- CONTACT FORM HERE -->
+                         <form id="appointment-form" role="form" method="post" action="index.php">
+
+                              <!-- SECTION TITLE -->
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                                   <h2>Enter patient details</h2>
+                              </div>
+
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="doc">Doctor Attending</label>
+                                        <input type="number" name="doc" value="" class="form-control" placeholder="D_id" required>
+                                   </div>
+
+                                  
+
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="name">First Name</label>
+                                        <input type="text" class="form-control" id="name" name="fname" placeholder="First Name" required>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="name">Last Name</label>
+                                        <input type="name" class="form-control" id="name" name="lname" placeholder="Last Name" required>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="age">Age</label>
+                                        <input type="number" name="age" value="" class="form-control" placeholder="Age" required>
+                                   </div>
+
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">Sex</label>
+                                        <select class="form-control" name="sex">
+                                             <option value="M">M</option>
+                                             <option value="F">F</option>
+                                             <option value="O">O</option>
+                                        </select>
+                                   </div>
+
+                                   <div class="col-md-12 col-sm-12">
+                                        <label for="telephone">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
+                                        <label for="Message">Address</label>
+                                        <textarea class="form-control" rows="5" id="message" name="address" placeholder="Enter your address"></textarea>
+                                         <div class="col-md-6 col-sm-6">
+                                        <label for="pin">Pincode</label>
+                                        <input type="number" name="pin" value="" class="form-control" placeholder="PIN" required>
+                                   </div>
+                                        <button type="submit" class="form-control" id="cf-submit" name="submit" href="#popup1">Submit Button</button>
+                                   </div>
+                                   
+                              </div>
+                        </form>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+    
+
+
+  
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.sticky.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
